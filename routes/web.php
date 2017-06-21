@@ -14,3 +14,14 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('login', function(){
+  return view('ayush.login');
+});
+
+Route::get('createpost', function(){
+  return view('ayush.createPost');
+});
+
+Route::get('fullpost',function() {
+  return view('ayush.fullpost');
+});
