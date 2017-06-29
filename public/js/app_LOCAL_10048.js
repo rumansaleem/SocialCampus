@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 39);
+/******/ 	return __webpack_require__(__webpack_require__.s = 38);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -471,7 +471,7 @@ utils.forEach(['post', 'put', 'patch'], function forEachMethodWithData(method) {
 
 module.exports = defaults;
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(33)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(35)))
 
 /***/ }),
 /* 2 */
@@ -775,15 +775,15 @@ module.exports = g;
  * building robust, powerful web applications using Vue and Laravel.
  */
 
-__webpack_require__(29);
+__webpack_require__(28);
 
-window.Vue = __webpack_require__(37);
+window.Vue = __webpack_require__(36);
 //login JavaScript
-__webpack_require__(44);
+__webpack_require__(31);
 //createpost JavaScript
-__webpack_require__(42);
+__webpack_require__(29);
 //javasrcipt for fullpost
-__webpack_require__(43);
+__webpack_require__(30);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -801,7 +801,7 @@ __webpack_require__(43);
 /* 9 */
 /***/ (function(module, exports) {
 
-throw new Error("Module build failed: ModuleBuildError: Module build failed: \n\n^\n      Invalid CSS after \"\": expected 1 selector or at-rule, was \"<<<<<<< HEAD\"\n      in /home/vagrant/Sites/SocialCampus/resources/assets/sass/_variables.scss (line 1, column 1)\n    at runLoaders (/home/vagrant/Sites/SocialCampus/node_modules/webpack/lib/NormalModule.js:192:19)\n    at /home/vagrant/Sites/SocialCampus/node_modules/loader-runner/lib/LoaderRunner.js:364:11\n    at /home/vagrant/Sites/SocialCampus/node_modules/loader-runner/lib/LoaderRunner.js:230:18\n    at context.callback (/home/vagrant/Sites/SocialCampus/node_modules/loader-runner/lib/LoaderRunner.js:111:13)\n    at Object.asyncSassJobQueue.push [as callback] (/home/vagrant/Sites/SocialCampus/node_modules/sass-loader/lib/loader.js:57:13)\n    at Object.<anonymous> (/home/vagrant/Sites/SocialCampus/node_modules/sass-loader/node_modules/async/dist/async.js:2243:31)\n    at Object.callback (/home/vagrant/Sites/SocialCampus/node_modules/sass-loader/node_modules/async/dist/async.js:906:16)\n    at options.error (/home/vagrant/Sites/SocialCampus/node_modules/node-sass/lib/index.js:294:32)");
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 /* 10 */
@@ -1645,12 +1645,11 @@ module.exports = function spread(callback) {
 
 
 /***/ }),
-/* 28 */,
-/* 29 */
+/* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-window._ = __webpack_require__(32);
+window._ = __webpack_require__(34);
 
 /**
  * We'll load jQuery and the Bootstrap jQuery plugin which provides support
@@ -1659,9 +1658,9 @@ window._ = __webpack_require__(32);
  */
 
 try {
-  window.$ = window.jQuery = __webpack_require__(31);
+  window.$ = window.jQuery = __webpack_require__(33);
 
-  __webpack_require__(30);
+  __webpack_require__(32);
 } catch (e) {}
 
 /**
@@ -1704,7 +1703,53 @@ if (token) {
 // });
 
 /***/ }),
+/* 29 */
+/***/ (function(module, exports) {
+
+var modal = document.getElementById('myModal');
+modal.style.display = "none";
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+
+btn.onclick = function () {
+    modal.style.display = "block";
+};
+// When the user clicks on <span> (x), close the modal
+span.onclick = function () {
+    modal.style.display = "none";
+};
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+};
+
+/***/ }),
 /* 30 */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+/* 31 */
+/***/ (function(module, exports) {
+
+$(function () {
+  $('#myTabs a').on("click", function (e) {
+    e.preventDefault();
+    $(this).tab('show');
+  });
+});
+
+/***/ }),
+/* 32 */
 /***/ (function(module, exports) {
 
 /*!
@@ -4087,7 +4132,7 @@ if (typeof jQuery === 'undefined') {
 
 
 /***/ }),
-/* 31 */
+/* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -14347,7 +14392,7 @@ return jQuery;
 
 
 /***/ }),
-/* 32 */
+/* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global, module) {var __WEBPACK_AMD_DEFINE_RESULT__;/**
@@ -31436,10 +31481,10 @@ return jQuery;
   }
 }.call(this));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(7), __webpack_require__(38)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(7), __webpack_require__(37)(module)))
 
 /***/ }),
-/* 33 */
+/* 35 */
 /***/ (function(module, exports) {
 
 // shim for using process in browser
@@ -31629,10 +31674,7 @@ process.umask = function() { return 0; };
 
 
 /***/ }),
-/* 34 */,
-/* 35 */,
-/* 36 */,
-/* 37 */
+/* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41331,7 +41373,7 @@ module.exports = Vue$3;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(7)))
 
 /***/ }),
-/* 38 */
+/* 37 */
 /***/ (function(module, exports) {
 
 module.exports = function(module) {
@@ -41359,60 +41401,12 @@ module.exports = function(module) {
 
 
 /***/ }),
-/* 39 */
+/* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(8);
 module.exports = __webpack_require__(9);
 
-
-/***/ }),
-/* 40 */,
-/* 41 */,
-/* 42 */
-/***/ (function(module, exports) {
-
-var modal = document.getElementById('myModal');
-modal.style.display = "none";
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal
-
-btn.onclick = function () {
-    modal.style.display = "block";
-};
-// When the user clicks on <span> (x), close the modal
-span.onclick = function () {
-    modal.style.display = "none";
-};
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function (event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-};
-
-/***/ }),
-/* 43 */
-/***/ (function(module, exports) {
-
-
-
-/***/ }),
-/* 44 */
-/***/ (function(module, exports) {
-
-$(function () {
-  $('#myTabs a').on("click", function (e) {
-    e.preventDefault();
-    $(this).tab('show');
-  });
-});
 
 /***/ })
 /******/ ]);

@@ -1,0 +1,11 @@
+.dropdown-menu {
+  > li {
+    > a {
+      color: $main-color;
+      &:hover, &:focus{
+        background-color: $main-color;
+        color: white;
+      }
+    }
+  }
+}

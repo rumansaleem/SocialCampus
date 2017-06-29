@@ -63,7 +63,11 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
+<<<<<<< HEAD
+/******/ 	return __webpack_require__(__webpack_require__.s = 38);
+=======
 /******/ 	return __webpack_require__(__webpack_require__.s = 39);
+>>>>>>> f1c9c33b80de730d7e6e9af65b863b9b7762b9dc
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -471,7 +475,11 @@ utils.forEach(['post', 'put', 'patch'], function forEachMethodWithData(method) {
 
 module.exports = defaults;
 
+<<<<<<< HEAD
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(35)))
+=======
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(33)))
+>>>>>>> f1c9c33b80de730d7e6e9af65b863b9b7762b9dc
 
 /***/ }),
 /* 2 */
@@ -777,13 +785,23 @@ module.exports = g;
 
 __webpack_require__(29);
 
+<<<<<<< HEAD
+window.Vue = __webpack_require__(36);
+//login JavaScript
+__webpack_require__(31);
+=======
 window.Vue = __webpack_require__(37);
 //login JavaScript
 __webpack_require__(44);
+>>>>>>> f1c9c33b80de730d7e6e9af65b863b9b7762b9dc
 //createpost JavaScript
 __webpack_require__(42);
 //javasrcipt for fullpost
+<<<<<<< HEAD
+__webpack_require__(30);
+=======
 __webpack_require__(43);
+>>>>>>> f1c9c33b80de730d7e6e9af65b863b9b7762b9dc
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -1650,7 +1668,11 @@ module.exports = function spread(callback) {
 /***/ (function(module, exports, __webpack_require__) {
 
 
+<<<<<<< HEAD
+window._ = __webpack_require__(34);
+=======
 window._ = __webpack_require__(32);
+>>>>>>> f1c9c33b80de730d7e6e9af65b863b9b7762b9dc
 
 /**
  * We'll load jQuery and the Bootstrap jQuery plugin which provides support
@@ -1659,9 +1681,15 @@ window._ = __webpack_require__(32);
  */
 
 try {
+<<<<<<< HEAD
+  window.$ = window.jQuery = __webpack_require__(33);
+
+  __webpack_require__(32);
+=======
   window.$ = window.jQuery = __webpack_require__(31);
 
   __webpack_require__(30);
+>>>>>>> f1c9c33b80de730d7e6e9af65b863b9b7762b9dc
 } catch (e) {}
 
 /**
@@ -1707,6 +1735,26 @@ if (token) {
 /* 30 */
 /***/ (function(module, exports) {
 
+<<<<<<< HEAD
+
+
+/***/ }),
+/* 31 */
+/***/ (function(module, exports) {
+
+$(function () {
+  $('#myTabs a').on("click", function (e) {
+    e.preventDefault();
+    $(this).tab('show');
+  });
+});
+
+/***/ }),
+/* 32 */
+/***/ (function(module, exports) {
+
+=======
+>>>>>>> f1c9c33b80de730d7e6e9af65b863b9b7762b9dc
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
@@ -4087,7 +4135,11 @@ if (typeof jQuery === 'undefined') {
 
 
 /***/ }),
+<<<<<<< HEAD
+/* 33 */
+=======
 /* 31 */
+>>>>>>> f1c9c33b80de730d7e6e9af65b863b9b7762b9dc
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -14347,7 +14399,11 @@ return jQuery;
 
 
 /***/ }),
+<<<<<<< HEAD
+/* 34 */
+=======
 /* 32 */
+>>>>>>> f1c9c33b80de730d7e6e9af65b863b9b7762b9dc
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global, module) {var __WEBPACK_AMD_DEFINE_RESULT__;/**
@@ -31436,10 +31492,17 @@ return jQuery;
   }
 }.call(this));
 
+<<<<<<< HEAD
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(7), __webpack_require__(37)(module)))
+
+/***/ }),
+/* 35 */
+=======
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(7), __webpack_require__(38)(module)))
 
 /***/ }),
 /* 33 */
+>>>>>>> f1c9c33b80de730d7e6e9af65b863b9b7762b9dc
 /***/ (function(module, exports) {
 
 // shim for using process in browser
@@ -31629,10 +31692,14 @@ process.umask = function() { return 0; };
 
 
 /***/ }),
+<<<<<<< HEAD
+/* 36 */
+=======
 /* 34 */,
 /* 35 */,
 /* 36 */,
 /* 37 */
+>>>>>>> f1c9c33b80de730d7e6e9af65b863b9b7762b9dc
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41331,7 +41398,11 @@ module.exports = Vue$3;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(7)))
 
 /***/ }),
+<<<<<<< HEAD
+/* 37 */
+=======
 /* 38 */
+>>>>>>> f1c9c33b80de730d7e6e9af65b863b9b7762b9dc
 /***/ (function(module, exports) {
 
 module.exports = function(module) {
@@ -41359,13 +41430,19 @@ module.exports = function(module) {
 
 
 /***/ }),
+<<<<<<< HEAD
+/* 38 */
+=======
 /* 39 */
+>>>>>>> f1c9c33b80de730d7e6e9af65b863b9b7762b9dc
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(8);
 module.exports = __webpack_require__(9);
 
 
+<<<<<<< HEAD
+=======
 /***/ }),
 /* 40 */,
 /* 41 */,
@@ -41414,5 +41491,6 @@ $(function () {
   });
 });
 
+>>>>>>> f1c9c33b80de730d7e6e9af65b863b9b7762b9dc
 /***/ })
 /******/ ]);

@@ -2,6 +2,10 @@
 // Fonts
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
 
+// Bootstrap
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "node_modules/font-awesome/scss/font-awesome";
+
 // Variables
 @import "variables";
 @import "login";
@@ -11,6 +15,7 @@
 @import "setting";
 @import "conversation";
 
+<<<<<<< HEAD
 // Bootstrap
 @import "../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 .overlay{
@@ -43,3 +48,10 @@ section.profile-head {
     }
   }
 }
+=======
+//Overrides
+@import "overrides/navbar";
+@import "overrides/dropdown";
+@import "profile";
+@import "helpers";
+>>>>>>> f1c9c33b80de730d7e6e9af65b863b9b7762b9dc
