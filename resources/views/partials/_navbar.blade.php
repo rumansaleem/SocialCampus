@@ -1,15 +1,15 @@
 <header>
-  <nav class="navbar navbar-default navbar-fixed-top">
+  <nav class="navbar navbar-default navbar-static-top">
     <div class="container">
       <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
           <a class="navbar-brand" href="#">Social Campus</a>
-          <ul class="nav navbar-nav">
-            <li class="active" ><a href="#"><span class="fa fa-home fa-lg"></span></a></li>
-            <li><a href="#"><span class="fa fa-globe fa-lg has-badge"><span class="badge">3</span></span></a></li>
-            <li><a href="#"><span class="fa fa-envelope fa-lg has-badge"><span class="badge">6</span></span></a></li>
-          </ul>
         </div>
+        <ul class="nav navbar-nav">
+          <li class="active" ><a href="#"><span class="fa fa-home fa-lg"></span></a></li>
+          <li><a href="#"><span class="fa fa-globe fa-lg has-badge"><span class="badge">3</span></span></a></li>
+          <li><a href="#"><span class="fa fa-envelope fa-lg has-badge"><span class="badge">6</span></span></a></li>
+        </ul>
         <div class="navbar-right">
           <ul class="nav navbar-nav navbar-right">
             <li class="dropdown">

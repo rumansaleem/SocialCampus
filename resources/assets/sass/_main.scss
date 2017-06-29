@@ -1,7 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
 
 body {
-  padding-top: $body-padding-top;
   background: $body-bg; /* fallback for old browsers */
   background: -webkit-linear-gradient(right, $body-bg, darken($body-bg, 10%));
   background: -moz-linear-gradient(right, $body-bg, darken($body-bg, 10%));
