@@ -1,4 +1,7 @@
 
+//Website Colors
+$main-color: #5c5d70;
+$main-highlight-color: #e5e5e5;
 // Body
 $body-bg: #f5f8fa;
 
@@ -10,7 +13,7 @@ $panel-default-border: $laravel-border-color;
 $panel-inner-border: $laravel-border-color;
 
 // Brands
-$brand-primary: #3097D1;
+$brand-primary: $main-color;
 $brand-info: #8eb4cb;
 $brand-success: #2ab27b;
 $brand-warning: #cbb956;
@@ -24,7 +27,7 @@ $line-height-base: 1.6;
 $text-color: #636b6f;
 
 // Navbar
-$navbar-default-bg: #fff;
+$navbar-default-bg: $main-color;
 
 // Buttons
 $btn-default-color: $text-color;

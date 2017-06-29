@@ -1,0 +1,120 @@
+/*
+  Bootstrap Navbar Overrides
+*/
+.navbar{
+  color: $main-highlight-color;
+  box-shadow: 0px 2px 8px fade-out($main-color, 0.3);
+  &.navbar-default{
+    background-color: $main-color;
+    border: none;
+    .navbar-brand{
+      color: $main-highlight-color;
+    }
+    .navbar-toggle{
+      border-radius: 0;
+      border: none;
+      font-size: 20px;
+      line-height: 20px;
+      &:hover, &:focus {
+        color: darken($main-highlight-color, 20%);
+        background: transparent;
+      }
+    }
+    .nav-main{
+      width: 100%;
+      > .navbar-nav{
+        text-align: center;
+        > li{
+          display: inline;
+
+        }
+      }
+    }
+    .navbar-nav{
+      > li{
+        > a{
+          color: $main-highlight-color;
+          font-weight: bold;
+          text-transform: uppercase;
+          .has-badge{
+            position: relative;
+            min-width: 20px;
+            .badge{
+              position: absolute;
+              bottom: -6px;
+              right: -10px;
+              min-width: 16px;
+              border-radius: 4px;
+              padding: 3px;
+              line-height: 11px;
+              font-size: 11px;
+              font-weight: normal;
+              background: #ff691f;
+              color: white;
+            }
+          }
+          &:after{
+            content: "";
+            height: 2px;
+            width: 0px;
+            background: $main-highlight-color;
+            position: absolute;
+            left: 50%;
+            bottom: 0px;
+          }
+        }
+        &:hover, &.active, &.dropdown.open{
+          > a{
+            color: $main-highlight-color;
+            background-color: rgba(0, 0, 0, 0.15);
+            &:after{
+              width: 100%;
+              transform: translateX(-50%);
+              transition: all 0.5s;
+            }
+          }
+        }
+      }
+    }
+  }
+  .navbar-toggle{
+    margin: 0px 8px 0px 0px;
+    padding: 15px;
+  }
+}
+.navbar-collapse{
+  clear: both;
+}
+.navbar-form{
+  margin: 0px -15px;
+  padding: 10px 15px;
+  border-top: 0px;
+  border-bottom: 0px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+@media (min-width: 480px){
+  .navbar-right {
+      float: right !important;
+      margin-right: -15px;
+  }
+  .navbar-header{
+    float: left;
+    margin-right: 10px;
+  }
+  .navbar-nav {
+      float: left;
+      margin: 0;
+      > li{
+        float:left;
+        >a {
+          padding: 15px;
+        }
+      }
+  }
+}
+
+@media (min-width: 768px){
+  .navbar-collapse{
+    clear: none;
+  }
+}
