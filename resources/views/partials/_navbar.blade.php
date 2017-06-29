@@ -8,6 +8,10 @@
             <li class="active" ><a href="#"><span class="fa fa-home fa-lg"></span></a></li>
             <li><a href="#"><span class="fa fa-globe fa-lg has-badge"><span class="badge">3</span></span></a></li>
             <li><a href="#"><span class="fa fa-envelope fa-lg has-badge"><span class="badge">6</span></span></a></li>
+          </ul>
+        </div>
+        <div class="navbar-right">
+          <ul class="nav navbar-nav navbar-right">
             <li class="dropdown">
               <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                 <span class="fa fa-user fa-lg"></span>
@@ -19,15 +23,13 @@
               </ul>
             </li>
           </ul>
-        </div>
-        <div class="navbar-right">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-search-collapse" aria-expanded="false">
             <span class="sr-only">Toggle Search Bar</span>
             <span class="fa fa-search"></span>
           </button>
         </div>
         <div class="collapse navbar-collapse" id="navbar-search-collapse">
-          <form class="navbar-form navbar-right">
+          <form class="navbar-form navbar-left">
             <div class="input-group">
               <input type="text" class="form-control" placeholder="Search">
               <span class="input-group-btn">
