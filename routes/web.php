@@ -25,3 +25,9 @@ Route::get('createpost', function(){
 Route::get('fullpost',function() {
   return view('ayush.fullpost');
 });
+Route::get('setting',function() {
+    return view('Dhananjay.setting');
+});
+Route::get('conversation',function(){
+    return view('Dhananjay.conversation');
+});

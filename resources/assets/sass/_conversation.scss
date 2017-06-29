@@ -1,0 +1,54 @@
+#head,#foot{
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-top: 5px;
+}
+img.userpic{
+  border-radius: 50%;
+
+}
+#username{
+  color: white;
+  margin-left: 5px;
+}
+#foot{
+  position:fixed;
+  left:0px;
+  bottom:0px;
+}
+#head{
+  position:fixed;
+  left:0px;
+  Top:50px;
+}
+.status {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-left: 5px;
+  background-color: #3d9970;
+
+}
+.userpic,#username,.status{
+  display: inline-block;
+}
+.dropdown   {
+  display: inline-block;
+  float: right;
+  margin-top: 3px;
+
+}
+.btn-default:hover{
+  background-color: red;
+}
+#content{
+  height: 1200px;
+ // border: 1px solid red;
+  margin-top: 50px;
+  overflow: hidden;
+
+
+}
+
+
