@@ -1,12 +1,9 @@
 
-<<<<<<< HEAD
+
 //Website Colors
 $main-color: #5c5d70;
 $main-highlight-color: #e5e5e5;
-=======
-$main-color: #2fa;
 
->>>>>>> 78a6d753622bd4f02cc7b1bbac466d2df8808c12
 // Body
 $body-bg: #f5f8fa;
 $light-grey : #bbbbbb;
@@ -34,11 +31,12 @@ $text-color: #636b6f;
 
 // Navbar
 $navbar-default-bg: $main-color;
+$body-padding-top: 70px;
 
 // Buttons
+$red-btn-color: red;
 $btn-default-color: $text-color;
-$button-padding:10px;
-$red-btn-color:#aff;
+$button-padding: 10px;
 
 // Inputs
 $input-border: lighten($text-color, 40%);
