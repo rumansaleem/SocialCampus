@@ -8,9 +8,11 @@
 @import "main";
 @import "modal";
 @import "fullpost";
+@import "setting";
+@import "conversation";
 
 // Bootstrap
-@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 .overlay{
     position: absolute;
     top: 0px;
