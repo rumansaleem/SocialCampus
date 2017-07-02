@@ -1,10 +1,6 @@
-#head,#foot{
-  padding-left: 5px;
-  padding-right: 5px;
-  margin-top: 5px;
-}
 img.userpic{
   border-radius: 50%;
+
 
 }
 #username{
@@ -15,11 +11,18 @@ img.userpic{
   position:fixed;
   left:0px;
   bottom:0px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-top: 5px;
 }
 #head{
   position:fixed;
   left:0px;
-  Top:50px;
+  top:50px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-top: 10px;
+  background-color: $main-color;
 }
 .status {
   height: 10px;
@@ -37,18 +40,12 @@ img.userpic{
   display: inline-block;
   float: right;
   margin-top: 3px;
+}
 
-}
-.btn-default:hover{
-  background-color: red;
-}
 #content{
   height: 1200px;
- // border: 1px solid red;
   margin-top: 50px;
   overflow: hidden;
-
-
 }
 
 
