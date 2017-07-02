@@ -11,12 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-Route::get('login', function(){
-  return view('ayush.login');
-});
+Route::get('/', "HomeController@index")->name('home');
+Auth::routes();
 
 Route::get('createpost', function(){
   return view('ayush.createPost');

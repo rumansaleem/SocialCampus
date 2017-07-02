@@ -9,3 +9,18 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+body.main-bg {
+  background: $main-color;
+  background: -webkit-linear-gradient(right, $main-color, darken($main-color, 10%));
+  background: -moz-linear-gradient(right, $main-color, darken($main-color, 10%));
+  background: -o-linear-gradient(right, $main-color, darken($main-color, 10%));
+  background: linear-gradient(to right, $main-color, darken($main-color, 10%));
+  color: $main-highlight-color;
+}
+
+
+//Footer
+.footer{
+  margin-top: 15px;
+  padding: 5px;
+}
