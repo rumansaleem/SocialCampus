@@ -11707,13 +11707,14 @@ button#savebtn:hover {
   font-weight: bold;
 }
 
-#triangleup {
+/*#triangleup{
   width: 100%;
   height: 0;
   border-left: 550px solid transparent;
   border-right: 550px solid transparent;
   border-bottom: 2px solid red;
 }
+*/
 
 .vertical-alignment-helper {
   display: table;
@@ -11738,7 +11739,6 @@ button#savebtn:hover {
 .modal-header {
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
-  background-color: #5c5d70;
   color: white;
 }
 
