@@ -1,7 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
 
 body {
-  padding-top: $body-padding-top;
   background: $body-bg; /* fallback for old browsers */
   background: -webkit-linear-gradient(right, $body-bg, darken($body-bg, 10%));
   background: -moz-linear-gradient(right, $body-bg, darken($body-bg, 10%));
@@ -9,4 +8,19 @@ body {
   background: linear-gradient(to left, $body-bg, darken($body-bg, 10%));
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+body.main-bg {
+  background: $main-color;
+  background: -webkit-linear-gradient(right, $main-color, darken($main-color, 10%));
+  background: -moz-linear-gradient(right, $main-color, darken($main-color, 10%));
+  background: -o-linear-gradient(right, $main-color, darken($main-color, 10%));
+  background: linear-gradient(to right, $main-color, darken($main-color, 10%));
+  color: $main-highlight-color;
+}
+
+
+//Footer
+.footer{
+  margin-top: 15px;
+  padding: 5px;
 }
