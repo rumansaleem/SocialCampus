@@ -11746,59 +11746,114 @@ label {
   font-style: italic;
 }
 
-img.userpic {
-  border-radius: 50%;
-}
-
-#username {
+#sidemenu {
+  padding: 10px;
+  height: 80vh;
+  background-color: #05053a;
   color: white;
-  margin-left: 5px;
 }
 
-#foot {
-  position: fixed;
-  left: 0px;
-  bottom: 0px;
-  padding-left: 5px;
-  padding-right: 5px;
-  margin-top: 5px;
+#sidemenu #sidehead {
+  height: 8vh;
+  width: 100%;
+  margin-bottom: 10px;
 }
 
-#head {
-  position: fixed;
-  left: 0px;
-  top: 50px;
-  padding-left: 5px;
-  padding-right: 5px;
-  margin-top: 10px;
-  background-color: #5c5d70;
-}
-
-.status {
-  height: 10px;
-  width: 10px;
+#sidemenu #sidehead img {
   border-radius: 50%;
-  vertical-align: middle;
-  margin-left: 5px;
-  background-color: #3d9970;
 }
 
-.userpic,
-#username,
-.status {
+#sidemenu #sidehead #myname {
   display: inline-block;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;
 }
 
-.dropdown {
-  display: inline-block;
-  float: right;
-  margin-top: 3px;
+#sidemenu #sidehead input[type="text"] {
+  width: 100%;
+  background-color: #05053a;
+  border: 0;
+  border-bottom: 0.5px white solid;
+  font-family: "Roboto", sans-serif;
 }
 
-#content {
-  height: 1200px;
-  margin-top: 50px;
+#sidemenu #sidehead input[type="text"]:focus {
+  outline: none;
+}
+
+#sidemenu #sidebody {
+  height: 69vh;
   overflow: hidden;
+}
+
+#sidemenu #sidebody .fhead {
+  margin-top: 10px;
+}
+
+#sidemenu #sidebody img {
+  border-radius: 50%;
+}
+
+#sidemenu #sidebody #friendname {
+  margin-left: 5px;
+}
+
+#sidemenu #sidebody .fstatus {
+  font-style: italic;
+  margin-left: 10px;
+}
+
+#sidemenu #sidebody:hover {
+  overflow-y: scroll;
+}
+
+#wwind {
+  display: none;
+  height: 80vh;
+}
+
+#wwind #empty {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  margin-top: 25%;
+}
+
+#mwind {
+  padding: 0;
+  max-height: 80vh;
+}
+
+#mwind #mhead {
+  height: 6vh;
+  background-color: white;
+  padding-left: 20px;
+  padding-top: 5px;
+  padding-right: 10px;
+}
+
+#mwind #mhead img {
+  vertical-align: middle;
+  border-radius: 50%;
+}
+
+#mwind #mhead p {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+#mwind #mbody {
+  height: 69.5vh;
+  width: 100%;
+  background-color: #f5f8fa;
+  overflow: hidden;
+}
+
+#mwind #mfoot {
+  height: 4vh;
+  background-color: white;
+}
+
+#mwind #mbody:hover {
+  overflow-y: scroll;
 }
 
 /*!
