@@ -16,11 +16,12 @@
     .navbar-toggle{
       border-radius: 0;
       border: none;
-      font-size: 20px;
-      line-height: 20px;
+      font-size: $navbar-font-size;
+      line-height: $navbar-text-line-height;
+      padding: $navbar-links-padding;
+      color: $main-highlight-color;
       &:hover, &:focus {
-        color: rgba(0, 0, 0, 0.15);
-        background: transparent;
+        color: white;
       }
     }
     .navbar-nav{
@@ -29,45 +30,40 @@
       > li{
         float: left;
         > a{
-          padding: 15px 10px;
+          line-height: $navbar-text-line-height;
+          font-size: $navbar-font-size;
+          padding: $navbar-links-padding;
           color: $main-highlight-color;
-          font-weight: bold;
-          text-transform: uppercase;
-          .has-badge{
-            position: relative;
-            min-width: 20px;
+          text-transform: capitalize;
+          i, img {
+            margin-right: 5px;
+          }
+          &.has-badge{
+            color: $main-highlight-color;
+            > span {
+              position: relative;
+            }
             .badge{
               position: absolute;
-              bottom: -6px;
-              right: -10px;
-              min-width: 16px;
+              bottom: -70%;
+              right: -70%;
+              min-width: 20px;
               border-radius: 4px;
               padding: 3px;
-              line-height: 11px;
-              font-size: 11px;
-              font-weight: normal;
-              background: #ff691f;
+              line-height: 14px;
+              font-size: 12px;
+              font-weight: bold;
+              background: $badge-notif-color;
               color: white;
             }
           }
-          &:after{
-            content: "";
-            height: 2px;
-            width: 0px;
-            background: $main-highlight-color;
-            position: absolute;
-            left: 50%;
-            bottom: 0px;
-          }
         }
-        &:hover, &.active, &.dropdown.open{
+        &:hover, &:focus, &.open{
           > a{
-            color: $main-highlight-color;
-            background-color: rgba(0, 0, 0, 0.15);
-            &:after{
-              width: 100%;
-              transform: translateX(-50%);
-              transition: all 0.5s;
+            color: white;
+            background-color: transparent;
+            .badge{
+              background-color: darken($badge-notif-color, 15%);
             }
           }
         }
@@ -79,15 +75,28 @@
     padding: 15px;
   }
 }
+#profile-navs{
+  > li {
+    > a {
+      padding: $navbar-links-padding 5px;
+    }
+  }
+}
 .navbar-form{
   border: none;
   margin: 0px;
-  padding: 8px 15px;
+  padding: ($navbar-height - 30px)/2;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 .navbar-right .dropdown-menu{
   right: 0;
   left: auto;
+}
+
+@media (max-width: 479px){
+  #profile-navs{
+    display: none;
+  }
 }
 @media (max-width: 413px){
   .navbar-nav{

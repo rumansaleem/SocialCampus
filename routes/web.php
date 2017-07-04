@@ -17,7 +17,7 @@ Auth::routes();
 Route::get('createpost', function(){
   return view('ayush.createPost');
 });
-
+Route::get('profile/{id}', "HomeController@viewProfile")->name('profile.view');
 Route::get('fullpost',function() {
   return view('ayush.fullpost');
 });

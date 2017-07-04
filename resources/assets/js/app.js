@@ -7,13 +7,8 @@
 
 require('./bootstrap');
 
+
 window.Vue = require('vue');
-//login JavaScript
-// require('./login');
-// //createpost JavaScript
-// require('./createpost');
-// //javasrcipt for fullpost
-// require('./fullpost');
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

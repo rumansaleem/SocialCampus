@@ -778,12 +778,6 @@ module.exports = g;
 __webpack_require__(28);
 
 window.Vue = __webpack_require__(33);
-//login JavaScript
-// require('./login');
-// //createpost JavaScript
-// require('./createpost');
-// //javasrcipt for fullpost
-// require('./fullpost');
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

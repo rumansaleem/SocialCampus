@@ -1,60 +1,22 @@
 
 // Fonts
-@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
-
-// Bootstrap
-@import "../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
-@import "../../../node_modules/font-awesome/scss/font-awesome";
+@import url(https://fonts.googleapis.com/css?family=Raleway|Lato:300,400,600);
 
 // Variables
 @import "variables";
-@import "login";
-@import "main";
-@import "modal";
-@import "fullpost";
-@import "setting";
-@import "conversation";
-
 
 // Bootstrap
-@import "../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
-.overlay{
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    background: rgba(0, 0, 0, 0.3);
-    width: 100%;
-    height: 100%;
-}
-
-
-section.profile-head {
-  position: relative;
-  top: 50px;
-  .profile-cover {
-    position: relative;
-      img.cover{
-        width: 100%;
-        height: 100%;
-      }
-  }
-  .profile-pic{
-    position: relative;
-    top: -12.5%;
-    img.round{
-      width: 250px;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      border-radius: 50%;
-    }
-  }
-}
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "node_modules/font-awesome/scss/font-awesome";
 
 //Overrides
 @import "overrides/navbar";
 @import "overrides/dropdown";
 @import "overrides/inputs";
+@import "overrides/navs";
+@import "main";
+@import "fullpost";
+@import "setting";
+@import "conversation";
 @import "profile";
 @import "helpers";
-

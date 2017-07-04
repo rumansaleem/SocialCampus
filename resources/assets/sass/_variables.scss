@@ -1,5 +1,4 @@
 
-
 //Website Colors
 $main-color: #5c5d70;
 $main-highlight-color: #e5e5e5;
@@ -24,13 +23,20 @@ $brand-danger: #bf5329;
 
 // Typography
 $icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
-$font-family-sans-serif: "Raleway", sans-serif;
+$font-family-sans-serif: "Lato", sans-serif;
 $font-size-base: 14px;
 $line-height-base: 1.6;
 $text-color: #636b6f;
 
 // Navbar
 $navbar-default-bg: $main-color;
+$navbar-height: 70px;
+$navbar-links-padding: 15px;
+$navbar-text-line-height: $navbar-height - (2 * $navbar-links-padding);
+$navbar-font-size: 16px;
+
+$badge-notif-color: #ff691f;
+
 
 // Buttons
 $red-btn-color: red;
