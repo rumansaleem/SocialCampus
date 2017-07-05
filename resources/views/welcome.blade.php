@@ -2,7 +2,9 @@
 @section('title', 'Login | ')
 @section('content')
   <div class="container">
-    <h1 class="text-center m-b-50">Campus Network</h1>
+    <div class="brand-logo-big">
+      <img src="{{ asset('images/logo/logo.svg') }}" alt="">
+    </div>
       <div class="col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10">
         <div id="login" class="container-boxed toggle active">
             <h2 class="m-b-30">Login to Your Account</h2>

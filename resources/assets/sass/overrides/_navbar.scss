@@ -12,6 +12,10 @@
     border: none;
     .navbar-brand{
       color: $main-highlight-color;
+      padding: 5px 15px;
+      > img {
+        height: $navbar-height - 5px;
+      }
     }
     .navbar-toggle{
       border-radius: 0;
