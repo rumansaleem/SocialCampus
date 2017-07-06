@@ -2,16 +2,21 @@
 @section('title', 'Home Page | ')
 @section('content')
   <div class="container">
-      <div class="col-xs-12">
+      <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
         <form class="post-form clearfix" action="#" method="post">
           <div class="form-content">
             <img class="user-img" src="https://www.gravatar.com/avatar/{{ md5('ruman63@gmail.com') }}?s=80" alt="">
               {{ csrf_field() }}
-              <textarea id="post-content" rows="1" class="form-control" type="text" name="post" placeholder="Write something..."></textarea>
-          </div>
-          <div class="form-footer clearfix">
-            <input type="file" name="photo" class="pull-left input-sm">
-            <button type="submit" class="btn btn-primary btn-sm pull-right">Share</button>
+              <div class="form-input">
+                <textarea id="post-content" rows="1" class="form-control" type="text" name="post" placeholder="Write something..."></textarea>
+                <div id="post-photo-preview" class="photo-preview">
+                </div>
+                <div class="form-buttons clearfix">
+                  <button type="submit" class="btn btn-primary btn-sm">Share</button>
+                  <input type="file" name="photo" id="post-photo"class="pull-left input-sm">
+                  <label for="post-photo"><span><i class="fa fa-photo"></i></span>Add Photo</label>
+                </div>
+              </div>
           </div>
         </form>
       </div>
@@ -54,10 +59,43 @@
                 <ul class="footer-btns">
                   <li><a href="#"><i class="fa fa-heart"></i><span>Like</span></a></li>
                   <li>
-                    <a href="#"><i class="fa fa-comment"></i><span>Comment</span></a>
-
+                    <a role="button" aria-controls="#coment-box-{{$i}}" aria-expanded="false" data-toggle="collapse" href="#comment-box-{{$i}}"><i class="fa fa-comment"></i><span>Comment</span></a>
                   </li>
                   <li><a href="#"><i class="fa fa-share"></i><span>Share</span></a></li>
+                </ul>
+              </div>
+              <div id="comment-box-{{$i}}" class="comment-box collapse">
+                <form class="comment-form">
+                  <span class="user-img"><img src="https://www.gravatar.com/avatar/{{md5('ruman63@gmail.com')}}?s=40" alt=""></span>
+                  <input type="text" name="comment" placeholder="Write a comment..." class="form-control input-sm">
+                  <button type="submit" role="button" class="btn btn-primary btn-sm">Comment</button>
+                </form>
+                <ul class="comments-list">
+                  <li class="comment">
+                    <div class="comment-head">
+                      <span class="user-img"><img src="https://www.gravatar.com/avatar/{{md5('maxwell@gmail.com')}}?s=40"></span>
+                      <span class="user-name">
+                        <a href="#">Nix Maxwell</a>
+                        <span> 3 hours ago </span>
+                      </span>
+                    </div>
+                    <div class="comment-body"><span class="comment-text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam est voluptas provident repellendus eaque, harum hic, perferendis impedit praesentium similique.
+                    </span></div>
+                  </li>
+                  <li class="comment user">
+                    <div class="comment-head">
+                      <span class="user-img"><img src="https://www.gravatar.com/avatar/{{md5('ruman63@gmail.com')}}?s=40"></span>
+                      <span class="user-name">
+                        <a href="#">Ruman Saleem</a>
+                        <span class="label label-primary">AUTHOR</span>
+                        <span class="time">Just now</span>
+                      </span>
+                    </div>
+                    <div class="comment-body"><span class="comment-text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam est voluptas provident repellendus eaque, harum hic, perferendis impedit praesentium similique.
+                    </span></div>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -66,4 +104,30 @@
       </ul>
     </div>
   </div>
+@endsection
+
+@section('scripts')
+  <script type="text/javascript">
+    function readImage(input) {
+      if (input.files && input.files[0]) {
+        var reader = new FileReader();
+        var imageContainer = $('#post-photo-preview');
+        var image = imageContainer.find('img');
+        if( image !== null){
+          image.remove();
+        }
+        reader.onload = function (e) {
+          var img = $('<img>').attr('src', e.target.result);
+          img.appendTo("#post-photo-preview");
+          $('#post-photo-preview').addClass('has-image');
+        }
+
+        reader.readAsDataURL(input.files[0]);
+      }
+    }
+
+    $("#post-photo").change(function() {
+      readImage(this);
+    });
+  </script>
 @endsection
