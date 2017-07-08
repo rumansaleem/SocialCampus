@@ -13,6 +13,9 @@
 
 Route::get('/', "HomeController@index")->name('home');
 Auth::routes();
+Route::resource('posts', "PostController");
+Route::resource('comments', "CommentController");
+Route::resource('likes', "LikeController");
 
 Route::get('createpost', function(){
   return view('ayush.createPost');

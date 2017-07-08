@@ -20,7 +20,9 @@ class CreateUsersTable extends Migration
             $table->string('photo')->nullable();
             $table->string('cover')->nullable();
             $table->string('username')->nullable()->unique();
+            $table->char('occupation',2);
             $table->char('gender', 2);
+            $table->date('dob');
             $table->string('email')->unique();
             $table->string('password');
             $table->rememberToken();

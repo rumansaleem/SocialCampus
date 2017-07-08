@@ -7,7 +7,7 @@
             <img src="{{ asset('images/logo/logo.svg') }}" alt="Social Campus">
           </a>
         </div>
-        @if(!Auth::check())
+        @if(Auth::check())
           <ul class="nav navbar-nav">
             <li><a href="#"><span class="fa fa-home fa-lg"></span></a></li>
             <li><a href="#" class="has-badge"><span class="fa fa-globe fa-lg"><span class="badge">3</span></span></a></li>
@@ -17,8 +17,8 @@
             <ul id="profile-navs" class="nav navbar-nav navbar-right">
               <li>
                 <a href="#"><span class="user-img">
-                  <img src="https://www.gravatar.com/avatar/{{ md5('ruman63@gmail.com') }}?s=40" alt="User Name">
-                </span>Ruman</a>
+                  <img src="https://www.gravatar.com/avatar/{{ md5(strtolower(trim(Auth::user()->email))) }}?s=40&d=identicon" alt="User Name">
+                </span>{{ Auth::user()->fname }}</a>
               </li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
@@ -26,7 +26,12 @@
                 </a>
                 <ul class="dropdown-menu">
                   <li><a href="#"><i class="fa fa-gear"></i>Settings</a></li>
-                  <li><a href=""><i class="fa fa-sign-out"></i>Logout</a></li>
+                  <li>
+                    <a href="#logout" data-action="submit" data-target="logout-form"><i class="fa fa-sign-out"></i>Logout</a>
+                    <form id="logout-form" class="hide" action="{{ route('logout') }}" method="post">
+                      {{ csrf_field() }}
+                    </form>
+                  </li>
                 </ul>
               </li>
             </ul>
