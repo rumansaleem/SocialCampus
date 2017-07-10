@@ -20,10 +20,10 @@
                 <div class="input-group">
                   <span class="input-group-addon"><i class="fa fa-lock"></i></span>
                   <input type="password" name="password" placeholder="Password" class="form-control">
-                  @if($errors->has('email'))
-                    <span class="help-block">{{ $errors->first('email') }}</span>
-                  @endif
                 </div>
+                @if($errors->has('email'))
+                  <span class="help-block">{{ $errors->first('email') }}</span>
+                @endif
               </div>
               <div class="checkbox pull-left">
                 <label>

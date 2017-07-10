@@ -211,6 +211,20 @@
       </ul>
     </div>
   </div>
+  <div class="col-md-4">
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h5>Followers ({{ Auth::user()->followers()->count() }})</h5>
+      </div>
+      <div class="panel-body">
+        <ul>
+          @foreach (Auth::user()->followers as $follower)
+            <li>{{ $follower->fname." ".$follower->lname }}</li>
+          @endforeach
+        </ul>
+      </div>
+    </div>
+  </div>
 @endsection
 
 @section('scripts')

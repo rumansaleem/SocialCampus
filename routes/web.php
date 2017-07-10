@@ -20,7 +20,6 @@ Route::resource('likes', "LikeController");
 Route::get('createpost', function(){
   return view('ayush.createPost');
 });
-Route::get('profile/{id}', "HomeController@viewProfile")->name('profile.view');
 Route::get('fullpost',function() {
   return view('ayush.fullpost');
 });
@@ -30,3 +29,4 @@ Route::get('setting',function() {
 Route::get('conversation',function(){
     return view('Dhananjay.conversation');
 });
+Route::get('profile', "ProfileController@view")->name('profile.view');

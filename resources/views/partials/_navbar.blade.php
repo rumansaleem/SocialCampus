@@ -16,9 +16,8 @@
           <div class="navbar-right">
             <ul id="profile-navs" class="nav navbar-nav navbar-right">
               <li>
-                <a href="#"><span class="user-img">
-                  <img src="https://www.gravatar.com/avatar/{{ md5(strtolower(trim(Auth::user()->email))) }}?s=40&d=identicon" alt="User Name">
-                </span>{{ Auth::user()->fname }}</a>
+                <a href="{{ route('profile.view', ['id'=>Auth::user()->id]) }}"><span class="user-img">
+                  <img src="https://www.gravatar.com/avatar/{{ md5(strtolower(trim(Auth::user()->email))) }}?s=40&d=identicon" alt="User Name"></a>
               </li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
